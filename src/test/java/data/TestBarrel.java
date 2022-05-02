@@ -1,6 +1,6 @@
 package data;
 
-import randomworld.data.Barrel;
+import raftgame.data.Barrel;
 import org.junit.jupiter.api.*;
 import java.util.Arrays;
 

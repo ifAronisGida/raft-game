@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.*;
-import randomworld.Util;
+import raftgame.Util;
 
 import static org.junit.jupiter.api.Assertions.*;
 

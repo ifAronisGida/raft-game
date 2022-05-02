@@ -1,6 +1,6 @@
 package data;
 
-import randomworld.data.*;
+import raftgame.data.*;
 import org.junit.jupiter.api.*;
 
 
