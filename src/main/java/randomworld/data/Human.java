@@ -42,6 +42,11 @@ public class Human extends GameObject{
         return (hunger > 1 && thirst > 1);
     }
 
+    /**
+     * Adds an item to inventory.
+     *
+     * @param objectName item's name to check
+     */
     public void addToInventory(String objectName) {
         if (inventory.containsKey(objectName)) {
             inventory.put(objectName, inventory.get(objectName) + 1);
@@ -92,10 +97,6 @@ public class Human extends GameObject{
         if (inventory.containsKey(itemName)) {
             inventory.put(itemName, inventory.get(itemName) - numberToRemove);
         }
-    }
-
-    public void setHunger(int hunger) {
-        this.hunger = hunger;
     }
 
     /**

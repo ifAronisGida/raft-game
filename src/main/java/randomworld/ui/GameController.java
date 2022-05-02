@@ -14,6 +14,7 @@ import randomworld.data.World;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 /**
@@ -33,17 +34,17 @@ public class GameController implements Initializable {
     private List<ImageView> gameObjectsImages;
     private List<ImageView> buildingImages;
     private boolean isBuilding;
-    private final Image shark = new Image("file:img/arrow.png");
-    private final Image raft = new Image("file:img/raft.png");
-    private final Image water = new Image("file:img/water.png");
-    private final Image human = new Image("file:img/stickman.png");
-    private final Image leaf = new Image("file:img/leaf.png");
-    private final Image junk = new Image("file:img/junk.png");
-    private final Image board = new Image("file:img/board.png");
-    private final Image barrel = new Image("file:img/barrel.png");
-    private final Image stove = new Image("file:img/candle.png");
-    private final Image waterCleaner = new Image("file:img/water-cleaner.png");
-    private final Image net = new Image("file:img/net.png");
+    private final Image shark = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/arrow.png")));
+    private final Image raft = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/raft.png")));
+    private final Image water = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/water.png")));
+    private final Image human = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/stickman.png")));
+    private final Image leaf = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/leaf.png")));
+    private final Image junk = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/junk.png")));
+    private final Image board = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/board.png")));
+    private final Image barrel = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/barrel.png")));
+    private final Image stove = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/candle.png")));
+    private final Image waterCleaner = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/water-cleaner.png")));
+    private final Image net = new Image(Objects.requireNonNull(this.getClass().getResourceAsStream("/img/net.png")));
 
     @FXML
     AnchorPane acpGeneratedWorld;

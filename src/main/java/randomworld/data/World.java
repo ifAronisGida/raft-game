@@ -85,7 +85,7 @@ public class World {
      *
      * @return generated material object
      */
-    private GameObject createRandomObject() {
+    public GameObject createRandomObject() {
         Random random = new Random();
         int randomInt = random.nextInt(100);
         int randomCoordinate = random.nextInt(5,32);
@@ -325,7 +325,7 @@ public class World {
      * @param material object which is picked up
      * @return string containing the action's message
      */
-    private String pickupMaterial(GameObject material) {
+    public String pickupMaterial(GameObject material) {
         materialList.remove(material);
         if (material.getClass().getSimpleName().equals("Barrel")) {
             Barrel barrel = (Barrel) material;
@@ -538,6 +538,9 @@ public class World {
         return gameOver;
     }
 
+    public Shark getEnemy() {
+        return enemy;
+    }
 
     public int getActionCounter() {
         return actionCounter;
